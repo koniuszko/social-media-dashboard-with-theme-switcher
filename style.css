@@ -57,11 +57,17 @@ h1 {
 .social {
     background-color: #252B42;
     width: 100%;
-
     text-align: center;
     border-radius: 5px;
     overflow: hidden;
+    cursor: pointer;
+    transition: 0.07s;
 }
+
+.social:hover {
+    background-color: #333A55;
+}
+
 
 .social_color {
     display: block;
@@ -167,7 +173,14 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    transition: 0.07s;
+    cursor: pointer;
 }
+
+.overview_item:hover {
+    background-color: #333A55;
+}
+
 
 .left {
     justify-self: left;
@@ -187,4 +200,17 @@ h1 {
 
 .change_container {
     display: flex;
+    align-items: center;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8C98C6;
+    line-height: 20px;
+}
+
+.summary {
+    font-size: 32px;
+    font-weight: 700;
 }
