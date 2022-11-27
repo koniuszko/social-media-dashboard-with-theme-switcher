@@ -47,14 +47,17 @@ h1 {
 
 .overview_main {
     margin-top: 46px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
 }
 
 .social {
     background-color: #252B42;
-    width: 23%;
-    max-width: 265px;
+    width: 100%;
+
     text-align: center;
     border-radius: 5px;
     overflow: hidden;
@@ -150,4 +153,38 @@ h1 {
 .overview_today {
     margin: 24px 0 75px;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 24px 30px;
+}
+
+.overview_item {
+    background-color: #252B42;
+    width: 100%;
+    height: 125px;
+    border-radius: 5px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.left {
+    justify-self: left;
+}
+
+.up {
+    align-self: start;
+}
+
+.right {
+    justify-self: right;
+}
+
+.down {
+    align-self: end;
+}
+
+.change_container {
+    display: flex;
 }
