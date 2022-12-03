@@ -19,12 +19,22 @@
     border-bottom-right-radius: 20px;
 }
 
-body {
+
+.bg.light_mode {
+    background-color: #F7F9FF;
+}
+
+.page {
     max-width: 1440px;
     margin: 36px auto 0;
     padding: 0 5%;
     background-color: #1D1F29;
     color: #fff;
+}
+
+.page.light_mode {
+    background-color: #FFFFFF;
+    color: #1D1F29;
 }
 
 header {
@@ -51,12 +61,19 @@ h1 {
     font-weight: 700;
 }
 
+.total_follow.light_mode {
+    color: #63687D;
+}
+
 .mode {
     margin: 3px 13px 3px 0;
     color: #8C98C6;
     font-size: 14px;
     font-weight: 700;
+}
 
+.mode.light_mode {
+    color: #848BAB;
 }
 
 .overview_main {
@@ -76,10 +93,17 @@ h1 {
     transition: 0.07s;
 }
 
+.social.light_mode {
+    background-color: #F1F3FA;
+}
+
 .social:hover {
     background-color: #333A55;
 }
 
+.social:hover.light_mode {
+    background-color: #E1E4F0;
+}
 
 .social_color {
     display: block;
@@ -123,6 +147,10 @@ h1 {
     line-height: 20px;
 }
 
+.name.light_mode {
+    color: #63687D;
+}
+
 .total {
     font-size: 56px;
     font-weight: 700;
@@ -134,6 +162,10 @@ h1 {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 5px;
+}
+
+.unit.light_mode {
+    color: #63687D;
 }
 
 .change_containter {
@@ -189,8 +221,16 @@ h1 {
     cursor: pointer;
 }
 
+.overview_item.light_mode {
+    background-color: #F1F3FA;
+}
+
 .overview_item:hover {
     background-color: #333A55;
+}
+
+.overview_item:hover.light_mode {
+    background-color: #E1E4F0;
 }
 
 
@@ -222,6 +262,10 @@ h1 {
     line-height: 20px;
 }
 
+.description.light_mode {
+    color: #63687D;
+}
+
 .summary {
     font-size: 32px;
     font-weight: 700;
@@ -229,7 +273,7 @@ h1 {
 
 @media(max-width:420px) {
 
-    body {
+    .page {
         max-width: 375px;
     }
 
@@ -241,6 +285,10 @@ h1 {
         padding-bottom: 25px;
         margin-bottom: 16px;
         border-bottom: 1px solid #333A55;
+    }
+
+    .title.light_mode {
+        border-bottom: 1px solid #848BAB;
     }
 
     .switcher {
@@ -263,14 +311,10 @@ h1 {
         grid-gap: 24px;
     }
 
-
-
     .overview_today {
         grid-template-columns: 1fr;
         grid-gap: 16px;
     }
-
-
 
     .overview_item:hover {
         pointer-events: none;
