@@ -271,7 +271,24 @@ h1 {
     font-weight: 700;
 }
 
-@media(max-width:420px) {
+@media(max-width:900px) {
+    .page {
+        max-width: 875px;
+    }
+
+    .overview_main {
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+    }
+
+    .overview_today {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
+    }
+}
+
+@media(max-width:400px) {
 
     .page {
         max-width: 375px;
