@@ -318,9 +318,7 @@ h1 {
         line-height: 34px;
     }
 
-    .social:hover {
-        pointer-events: none;
-    }
+
 
     .overview_main {
         margin-top: 40px;
@@ -333,7 +331,5 @@ h1 {
         grid-gap: 16px;
     }
 
-    .overview_item:hover {
-        pointer-events: none;
-    }
+
 }
